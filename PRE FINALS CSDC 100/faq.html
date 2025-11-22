@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GenAI FAQs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --green: #05700e;
+      --light: #ffffff;
+      --dark: #1c1c1c;
+      --gray: #f4f4f4;
+    }
+
+    body {
+      font-family: "Helvetica", sans-serif;
+      color: var(--dark);
+      padding-top: 80px;
+      background: linear-gradient(-45deg, #e8f9f4, #ffffff, #c8f0d3, #f0f9e8);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .navbar-modern {
+      backdrop-filter: blur(12px);
+      background: rgba(4, 70, 1, 0.85) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-link {
+      color: var(--light) !important;
+      font-weight: 500;
+      transition: 0.25s ease;
+    }
+
+    .nav-link:hover {
+      opacity: 0.8;
+      transform: translateY(-2px);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background-color: var(--green);
+      margin: 0 auto 40px;
+      border-radius: 2px;
+    }
+
+    .faq-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .faq-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h6.text-primary {
+      color: var(--green) !important;
+      font-weight: bold;
+    }
+
+    h3.text-primary {
+      color: var(--green) !important;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-modern">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="index.html">GenAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="article.html">Articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="ethics.html">Ethics</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1>GenAI FAQs</h1>
+    <div class="divider"></div>
+  </div>
+
+  <section class="container my-5">
+    <h3 class="text-center mb-3 fw-bold">FAQ</h3>
+    <p class="text-center mb-5">
+      Find the answers to the most frequently asked questions below
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-robot pe-2"></i> What is Generative AI?</h6>
+          <p>Generative AI refers to AI algorithms capable of producing realistic, seemingly original content. Examples include essays, short-form content, books, lifelike images, art, and audio clips.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-cogs pe-2"></i> How does it work?</h6>
+          <p>Generative AI uses neural networks and large datasets to generate new content that mimics the patterns and styles of existing data.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-toolbox pe-2"></i> What are examples of GenAI tools?</h6>
+          <p>Popular tools include ChatGPT, DALL·E, MidJourney, Stable Diffusion, and other AI content generators for text, images, and audio.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-lightbulb pe-2"></i> What can GenAI do?</h6>
+          <p>GenAI can create articles, generate images, design music, assist with coding, and help brainstorm ideas.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-exclamation-triangle pe-2"></i> What are its limitations or risks?</h6>
+          <p>Limitations include inaccurate outputs, bias, over-reliance on AI, and ethical concerns about misuse of generated content.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="faq-card">
+          <h6 class="text-primary"><i class="fas fa-question-circle pe-2"></i> Are there any other FAQs?</h6>
+          <p>Users often ask about integration with apps, pricing, subscription plans, and ethical guidelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:40px 20px; text-align:center; background:var(--dark); color:var(--light);">
+    &copy; 2025 GenAI John Joseph T. Balmaceda
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
